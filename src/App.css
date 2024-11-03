@@ -1,0 +1,1282 @@
+
+.App {
+  text-align: center;
+}
+*{
+  box-sizing: border-box;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+body {
+  background-color: rgb(248, 249, 250);
+}
+
+.logo {
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.viedo {
+  width: 100%;
+
+}
+
+.viedo video {
+  width: 100%;
+
+}
+
+.navbar {
+  height: 4rem;
+}
+
+.logo {
+  margin-top: 50%;
+  height: auto;
+}
+
+.video {
+  height: calc(100vh - 4rem);
+
+}
+
+.img-logo {
+  width: 9vw;
+  height: auto;
+
+}
+
+.img-logo img {
+  width: 100%;
+  height: auto;
+}
+.hr {
+  width: 100%;
+}
+
+
+/* Login page style */
+.login {
+  display: flex;
+  margin: 0 2rem;
+
+}
+
+.login img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.login .logform {
+  margin: 3rem;
+  font-family: sans-serif;
+}
+
+.login .logform h1 {
+  font-size: 2.5rem;
+  padding: 1.2rem 0;
+}
+
+.login .logform p {
+  font-size: .875rem;
+  margin-bottom: 1rem;
+}
+
+.login .logform input {
+  padding: 1rem;
+  display: flex;
+  margin: .5rem 0;
+  width: 35rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 1rem;
+}
+
+.login .logform input::placeholder {
+  font-size: 1rem;
+  color: #212121;
+  font-weight: 700;
+}
+
+.login .logform input:focus {
+  border-bottom: 2px solid #212121;
+
+}
+
+.login .logform input[type=submit] {
+  width: 35rem;
+  padding: .75rem;
+  margin: .75rem 0;
+  background-color: #212121;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: .2rem;
+  border: none;
+}
+
+.login .logform input[type=submit]:hover {
+  background-color: #e0e0e0;
+  color: #212121;
+  transition: .5s ease;
+}
+
+.login .logform h2 {
+  padding: 1rem 0;
+  padding-top: 3rem;
+}
+
+.login .logform a {
+  color: #212121;
+  padding: .75rem;
+  text-decoration: underline #212121 2px;
+  text-underline-offset: 12px;
+  font-weight: 400;
+}
+
+.login .logform #sign,
+.login .logform #login,
+#addBtn {
+  width: 7rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #212121;
+  font-weight: 600;
+  border: 2px solid #212121;
+}
+
+.login .logform #sign:hover,
+.login .logform #login:hover,
+#addBtn:hover {
+  background-color: #212121;
+  color: #fff;
+  transition: .5s ease;
+}
+
+.login .logform #login {
+  width: 12rem;
+}
+
+hr {
+  width: 35rem;
+  margin: 2rem 0;
+  color: #e0e0e0;
+}
+
+/* Top 5 meals >> ahmed youssef */
+a {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-header {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Permanent Marker", cursive;
+  margin: 10px 0;
+}
+.boxes-btn {
+  background-color: #212121 !important;
+  color: #e0e0e0 !important;
+  font-weight: 500 !important;
+}
+.boxes-btn:hover {
+  background-color: #e0e0e0 !important;;
+  color: #212121 !important;;
+}
+
+.img-box {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+/* breakfast page */
+.cover-img {
+  width: 100%;
+}
+.cover-img img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin:2rem auto;
+  gap: 2rem;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.cards-container .card-container {
+  max-width: 18rem;
+  max-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.cards-container .card-container .card-details  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.star {
+  cursor: pointer;
+}
+.rating-display {
+  font-weight: bold;
+}
+ .favorite-icon button {
+  background: none;
+  outline: 0;
+  border: 0;
+  color: #f24646;
+
+}
+.favorite-icon button:hover {
+  scale: 1.1;
+  color: #c00606;
+  transition: 1s ease;
+}
+/* salah breakfast update */
+.pdcard{
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.pdcard img{
+  border-radius: 30px;
+  padding: 20px;
+  height: 20rem;
+  object-fit: cover;
+}
+.pdcardbody{
+  padding: 10px;
+  margin-top: -15px;
+
+}
+
+.wsbtn button{
+  border-radius: 50px;
+  
+}
+.wsbtn button:hover{
+  background-color: black;
+  border: none;
+}
+.wsbtn a{
+  font-size: 2rem;
+}
+
+.wsbtn a:hover{
+  transition: 0.3sec;
+  font-size: 2.25rem;
+  cursor: pointer;
+  
+}
+.wsbtn {
+  align-items: center !important;
+}
+/* salah breakfast update */
+
+
+
+/* breakfast page */
+@media screen and (max-width: 600px) {
+  .box-container {
+    width: 80%;
+  }
+  .row {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .login, .login .logform {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .login img {
+    display: none;
+  }
+  .login .logform input { 
+    width: 100%;
+  }
+  .login .logform input[type=submit] {
+    width: 100%
+  }
+  hr {
+    width: 50%;
+  }
+}
+/* profilePage */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 2rem auto;
+}
+.profile-header img {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover; 
+  margin-bottom: 2rem;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+/* input[type=file]  {
+  
+} */
+
+/* profilePage */
+
+/* Top 5 meals >> ahmed youssef */
+.meals-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  height: 650px;
+  border-radius: 10px;
+
+  .top-meals-left-col {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 5px solid transparent;
+
+    &:hover {
+      & a {
+        &::after {
+          background-color: rgba(0, 0, 0, 0.432);
+        }
+      }
+
+      & h2 {
+        opacity: 1;
+      }
+    }
+
+    & a {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      /* background-image: url("https://eadn-wc05-5516459.nxedge.io/wp-content/uploads/2021/09/04_Frys_Tacos_L.jpg"); */
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        transition: 0.7s;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.142);
+      }
+    }
+
+    & h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      z-index: 9;
+      font-size: 60px;
+      color: white;
+      opacity: 0;
+      transition: 0.7s;
+      font-family: "Permanent Marker", cursive;
+      font-weight: 600;
+    }
+  }
+
+  .top-meals-right-col {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-height: 100%;
+    border-radius: 0 10px 10px 0;
+    border: 5px solid transparent;
+
+    & div {
+      position: relative;
+      width: 100%;
+      height: 25%;
+      overflow: hidden;
+      transition: 0.9s;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.7s;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.142);
+      }
+
+      &:hover {
+        height: 500px;
+
+        &::after {
+          background-color: rgba(0, 0, 0, 0.432);
+        }
+
+
+        & h2 {
+          opacity: 1;
+        }
+      }
+
+      & a {
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+
+      & h2 {
+        position: absolute;
+        top: 20%;
+        z-index: 9;
+        text-align: center;
+        width: 100%;
+        font-size: 60px;
+        color: white;
+        opacity: 0;
+        transition: 0.7s;
+        font-family: "Permanent Marker", cursive;
+        font-weight: 600;
+      }
+    }
+
+    .top-1-meal {
+      border-radius: 10px 10px 0 0;
+      /* background-image: url("https://www.chelseasmessyapron.com/wp-content/uploads/2016/01/Pasta-E-Fagioli-2-683x1024.jpg"); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      & h2 {
+        top: 40%;
+      }
+    }
+
+    .top-2-meal {
+      /* background-image: url("https://pinchofyum.com/wp-content/uploads/Gochujang-Burgers-11-960x1440.jpg"); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .top-3-meal {
+      /* background-image: url("https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/sweet-potato-peanut-stew.jpg"); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .top-4-meal {
+      /* background-image: url("https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/Cashew-Coffee-1-3.jpg"); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 0 0 10px 10px;
+      object-fit: cover;
+    }
+  }
+
+  @media(max-width: 992px) {
+    position: relative;
+    height: fit-content;
+
+    & .top-meals-left-col {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px 10px 0 0;
+
+      & a {
+        background-position: 0 -140px;
+      }
+    }
+
+    & .top-meals-right-col {
+      flex-direction: row;
+      width: 100%;
+
+      & div {
+        height: 150px;
+
+        &:hover {
+          height: 150px;
+        }
+
+        & a {
+          height: 100%;
+
+          & img {
+            top: 0;
+          }
+        }
+
+        & h2 {
+          top: 30%;
+          font-size: 20px;
+        }
+      }
+
+      .top-1-meal {
+        border-radius: 0 0 0 10px;
+      }
+    }
+  }
+
+  @media(max-width: 768px) {
+    .top-meals-left-col {
+      & a {
+        background-position: center;
+      }
+    }
+  }
+}
+/* Top 5 meals >> ahmed youssef */
+/* Top Rated Meal page >> ahmed youssef */
+.top-rated-meal{
+  margin-top: 3.3rem;
+  font-family: "Permanent Marker", cursive;
+  & svg{
+    transition: 0.5s;
+    &:hover{
+      color: #52d082;
+    }
+  }
+  .recipe-head{
+    .section-header{
+      width: auto;
+    }
+  }
+  .main-section-header{
+    display: block;
+    margin: auto;
+    width: fit-content;
+    & svg{
+      font-size: 3.125rem;
+      color: #52d082;
+    }
+    .curved-line{
+      margin: -14px 0 0 -10px;
+      width: 110%;
+      height: 26px;
+      border: solid 5px #52d082;
+      border-color: #52d082 transparent transparent transparent;
+      border-radius: 50% / 26px 26px 0 0;
+    }
+  }
+  .section-header{
+    display: block;
+    width: fit-content;
+    text-align: start;
+    font-size: 30px;
+    .curved-line{
+      margin: -6px 0 0 -10px;
+      width: 110%;
+      height: 26px;
+      border: solid 5px #52d082;
+      border-color: #52d082 transparent transparent transparent;
+      border-radius: 50% / 26px 26px 0 0;
+    }
+  }
+  .meal-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 10px;
+    margin-top: 2.5rem;
+    .recipe-header{
+      font-size: 3.125rem;
+    }
+    .top-rated-meal-col-left{
+      & i{
+        font-size: 1.5rem;
+        color: #52d082;
+      }
+      .rate-share{
+        display: flex;
+        align-items: center;
+        .share{
+          display: flex;
+          margin-left: 1.25rem;
+          & a{
+            color: black;
+            margin-left: 0.5rem;
+            &:hover{
+              color: #52d082;
+            }
+          }
+        }
+        @media (max-width: 767px) {
+          justify-content: center;
+        }
+      }
+      .recipe-bio{
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        line-height: 2;
+        text-wrap: pretty;
+      }
+      .recipe-time{
+        display: flex;
+        align-items: center;
+        & div{
+          display: flex;
+          align-items: center;
+          &:last-child{
+            margin-left: 1.6rem;
+          }
+          & i{
+            font-size: 1.7rem;
+            margin-right: 0.5rem;
+          }
+        }
+        & p{
+          margin: 0;
+        }
+      }
+    }
+    .top-rated-meal-col-right{
+      width: 100%;
+      height: 100%;
+      .meal-photo{
+        /* background-image: url("https://eadn-wc05-5516459.nxedge.io/wp-content/uploads/2021/09/04_Frys_Tacos_L.jpg"); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        width: 100%;
+        min-height: 400px;
+        & img{
+          border-radius: 10px;
+          max-width: 100%;
+          max-height: 420px;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      & .top-rated-meal-col-right {
+        & .meal-photo {
+            & img {
+              max-height: 100%;
+            }
+          }
+        }
+    }
+  }
+  .recipe-body{
+    margin-top: 2rem;
+    .recipe-container{
+      display: flex;
+      gap: 30px;
+      .instructions{
+        background-color: #f3f4f5;
+        padding-left: 20px;
+        border-radius: 10px;
+        .recipe-content{
+          text-wrap: balance;
+          padding-left: 10px;
+          & div{
+            display: flex;
+            margin-top: 20px;
+            & p{
+              line-height: 2;
+              margin: 0 0 0 10px;
+            }
+            & span{
+              font-size: 1.6rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              height: 30px;
+              width: 30px;
+              padding: 7px;
+              background-color: #52d082;
+              color:white;
+            }
+          }
+        }
+      }
+    }
+    @media(max-width: 767px){
+      .recipe-container{
+        flex-wrap: wrap;
+        gap: 10px;
+        .ingredients{
+          width: 100%;
+          .section-header{
+            margin: auto;
+          }
+        }
+        .instructions{
+          padding-left: 0;
+          .section-header{
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+  .review{
+    margin-top: 2rem;
+    & form{
+      background-color: #f3f4f5;
+      padding: 10px;
+      border-radius: 10px;
+      #formHorizontalReview{
+        padding-bottom: 100px;
+      }
+      .form-control{
+        transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+        &:focus {
+          color: var(--bs-body-color);
+          background-color: var(--bs-body-bg);
+          border-color: rgb(82, 208, 130);
+          outline: 0;
+          box-shadow: 0 0 0 .25rem rgba(82, 208, 130, 0.481);
+      }
+      }
+      & button{
+        background-color: #52d082;
+        border-color: #52d082;
+      }
+    }
+  }
+}
+/* Top Rated Meal page >> ahmed youssef */
+
+/* medany updated */
+.mainContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.imageContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.meal-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.meal-image:hover {
+  transform: scale(1.1);
+}
+
+.detailsContainer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  align-content: space-around;
+}
+
+.detailsContainer h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.detailsContainer p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.detailsContainer div {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/*planPage */
+
+/* Card styling */
+.mealCard {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  min-height: 450px;
+}
+
+.mealCard:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* Button styling */
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* Loading Button */
+.loading-button {
+  margin-top: 20px;
+}
+
+.loading-button button {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.loading-button button:disabled {
+  background-color: #6c757d;
+}
+
+/* Form styling */
+.form-control {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Container */
+.mealPlan {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mealInfo {
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mealInfo:hover {
+  transform: translateY(-5px);
+}
+
+/*planPage */
+
+/* medany updated */
+
+/* mo'men updates */
+/* <----------------top-six-reviews-------------> */
+
+.text-reviews {
+  font-size: 40px;
+  display: flex;
+  align-content: center;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: "Permanent Marker", cursive;
+}
+
+.text-reviews-p {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.product--image {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-review {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: arial;
+}
+
+
+.btn-review {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.btn-review:hover {
+  opacity: 0.7;
+  background-color: #212121;
+  color: #fff;
+  transition: .5s ease;
+}
+
+
+/* <---------------profile-names----------------------> */
+
+.review-p {
+  margin-top: 4rem;
+}
+
+#img-prof {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #212121;
+  cursor: pointer;
+}
+
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.links-logo {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.links-logo:hover {
+  color: gray;
+  transition: .5s ease;
+}
+
+.btn-prof {
+  width: 30rem;
+  height: 4rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #212121;
+  font-weight: 600;
+  border: 2px solid #212121;
+  margin: 3rem 0 0 0;
+  font-size: 1.2rem;
+}
+
+
+.btn-prof:hover {
+  background-color: #212121;
+  color: #fff;
+  transition: .5s ease;
+}
+
+
+/* <----------------------fevorites-page-------------------> */
+
+.review-p-fevo {
+  margin-top: 4rem;
+}
+
+.cover-photo {
+  max-width: 100%;
+}
+
+.cover-photo img {
+  height: auto;
+  object-fit: cover;
+}
+
+#img-favo {
+  width: 10rem;
+  height: 12rem;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#favo-para {
+  color: gray;
+}
+
+.links-favo {
+  display: flex;
+  
+
+}
+
+.star-logo {
+  font-size: 2rem;
+  color: gold;
+}
+
+#rate {
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+  color: #000;
+}
+
+#love-logo {
+  margin: 0 0 0 2rem;
+  font-size: 1.8rem;
+  color: rgb(242, 70, 70);
+  cursor: pointer;
+}
+
+#delete-logo {
+  margin: 0.1rem 0 0 2rem;
+  font-size: 1.7rem;
+  color: red;
+  cursor: pointer;
+}
+
+
+
+#btn-fevo {
+  width: 9rem;
+  /* height: 2.5rem; */
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #212121;
+  margin-top: 0.4rem;
+  font-weight: 600;
+  border: 2px solid #212121;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+#btn-fevo:hover {
+  background-color: #212121;
+  color: #fff;
+  transition: .5s ease;
+}
+
+
+
+/* <----------------------profile-page-------------------> */
+
+#img-profi {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #48cb57;
+}
+
+.uploud-profi-img {
+  margin-left: 4rem;
+}
+
+.profi-det {
+  display: flex;
+  gap: 2rem;
+}
+
+.profi-det-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:8px;
+}
+
+.profi-det-c h4 {
+  font-weight: 500;
+  color: gray;
+}
+
+.profi-det-email-c {
+  display: flex;
+  align-items: center;
+  gap:8px;
+}
+
+.profi-det-email-c h4 {
+  font-weight: 500;
+  color: gray;
+}
+
+.links-profi {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.follow h4{
+  font-weight: 500;
+  color: gray;
+}
+
+.comment-profi {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 2rem;
+}
+
+
+/* mo'men updates */
+/* salah updates */
+
+.Footer {
+  padding: 2rem 0;
+  margin-top: 4rem;
+  background-color: #f8f9fa;
+}
+
+.ft-1 h3 {
+  font-weight: 700;
+  font-family: cursive;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
+}
+
+.ft-1 span {
+  color: #52d082;
+}
+
+.ft-1 p {
+  padding: 0rem 5rem 0.8rem 0;
+  font-weight: 500;
+}
+
+
+
+.footer h5 {
+  font-weight: bold;
+
+}
+
+.ft-2 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ft-2 ul li {
+  padding: 0.35rem 0;
+  font-weight: 500;
+}
+
+.ft-2 ul a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.06rem;
+}
+
+.ft-3 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ft-3 ul li {
+  font-weight: 500;
+  padding: 0.1rem 0;
+  font-size: 1.06rem;
+
+}
+
+.ft-3 ul a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.06rem;
+}
+
+.ft-3 i {
+  padding-right: 0.5rem;
+}
+
+.Last-footer {
+  background: #f8f9fa;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: #f1f3f5;
+  border-top-style: solid;
+
+}
+
+.Last-footer p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.Last-footer p i {
+  padding-right: 0.5rem;
+}
+
+/* salah updates */
